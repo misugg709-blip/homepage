@@ -121,6 +121,7 @@ h1, h2, h3 { text-wrap: balance; letter-spacing: -0.02em; }
 .gen-options select { margin-left: .4rem; padding: .35rem .5rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-family: inherit; }
 .gen-result { margin-top: 1.7rem; display: flex; flex-direction: column; gap: 1.1rem; align-items: center; }
 .gen-line { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+.set-label { width: 26px; height: 26px; border-radius: 8px; background: var(--surface-2); color: var(--text-soft); font-weight: 800; font-size: .85rem; display: grid; place-items: center; flex-shrink: 0; }
 .ball-set { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; }
 .ball {
   width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;

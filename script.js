@@ -65,13 +65,14 @@ function pickNumbers(mode){
   return [...s].sort((a,b)=>a-b);
 }
 const genResult = document.getElementById("genResult");
+const GEN_SETS = 5; // 한 번에 5세트 동시 생성
 document.getElementById("genBtn").addEventListener("click",()=>{
   const mode=document.querySelector('input[name="genMode"]:checked').value;
-  const count=parseInt(document.getElementById("genCount").value,10);
   genResult.innerHTML="";
-  for(let s=0;s<count;s++){
+  for(let s=0;s<GEN_SETS;s++){
     const nums=pickNumbers(mode);
     const line=document.createElement("div"); line.className="gen-line";
+    const label=document.createElement("span"); label.className="set-label"; label.textContent=String.fromCharCode(65+s); // A~E
     const set=document.createElement("div"); set.className="ball-set";
     nums.forEach((n,i)=>{ const b=makeBall(n); b.style.animationDelay=`${(s*6+i)*0.05}s`; set.appendChild(b); });
     const actions=document.createElement("div"); actions.className="mini-actions";
@@ -80,7 +81,7 @@ document.getElementById("genBtn").addEventListener("click",()=>{
     const saveBtn=document.createElement("button"); saveBtn.className="icon-btn"; saveBtn.textContent="⭐ 저장";
     saveBtn.addEventListener("click",()=>saveSet(nums));
     actions.append(simBtn, saveBtn);
-    line.append(set, actions);
+    line.append(label, set, actions);
     genResult.appendChild(line);
   }
 });
