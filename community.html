@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>커뮤니티 · 공지사항 · 1:1문의 | (사)미래교육이룸학술협회</title>
+  <meta name="description" content="공지사항, 협회소식, 1:1 문의, 수강후기, 이벤트를 확인하세요." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="community">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">홈</a></li>
+          <li aria-current="page">커뮤니티</li>
+        </ol>
+        <h1 class="page-hero__title">커뮤니티</h1>
+        <p class="page-hero__desc">협회 소식과 수료생 이야기, 궁금한 점을 나누는 공간입니다.</p>
+      </div>
+    </section>
+
+    <!-- 공지사항 -->
+    <section class="section" id="notice">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">NOTICE</span>
+            <h2 class="section-title">공지사항 · 협회소식</h2>
+          </div>
+        </div>
+
+        <table class="board">
+          <caption class="sr-only">공지사항 목록 — 번호, 제목, 등록일, 조회수</caption>
+          <thead>
+            <tr>
+              <th scope="col" style="width:80px">번호</th>
+              <th scope="col">제목</th>
+              <th scope="col" style="width:120px">등록일</th>
+              <th scope="col" class="views" style="width:90px">조회</th>
+            </tr>
+          </thead>
+          <tbody id="noticeBoard"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 이벤트 -->
+    <section class="section section--soft" id="event">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">EVENT</span>
+          <h2 class="section-title">진행 중인 이벤트</h2>
+        </div>
+
+        <div class="grid grid--2" id="eventGrid"></div>
+      </div>
+    </section>
+
+    <!-- 수강후기 -->
+    <section class="section" id="review">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">REVIEWS</span>
+          <h2 class="section-title">수강후기</h2>
+          <p class="section-desc">수료생이 직접 남긴 후기입니다. (예시 콘텐츠)</p>
+        </div>
+
+        <div style="max-width:860px;margin:0 auto" id="reviewList"></div>
+      </div>
+    </section>
+
+    <!-- 1:1 문의 -->
+    <section class="section section--soft" id="qna">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">CONTACT</span>
+          <h2 class="section-title">1:1 문의</h2>
+          <p class="section-desc">평일 09:00~18:00에 접수된 문의는 영업일 기준 1일 내 답변드립니다. (예시)</p>
+        </div>
+
+        <div class="grid grid--2" style="align-items:start;max-width:960px;margin:0 auto">
+          <form class="card" id="qnaForm" novalidate>
+            <p class="form-note">데모 폼입니다. 입력값은 전송·저장되지 않습니다.</p>
+
+            <div class="field">
+              <label for="qnaCat">문의 유형 <span class="req" aria-hidden="true">*</span></label>
+              <select id="qnaCat" name="category" required></select>
+            </div>
+
+            <div class="field">
+              <label for="qnaName">성명 <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="qnaName" name="name" required autocomplete="name" placeholder="예) 홍길동" />
+            </div>
+
+            <div class="field">
+              <label for="qnaEmail">이메일 <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="qnaEmail" name="email" required autocomplete="email" placeholder="예) hong@example.com" />
+            </div>
+
+            <div class="field">
+              <label for="qnaPhone">연락처</label>
+              <input type="tel" id="qnaPhone" name="phone" autocomplete="tel" placeholder="예) 010-0000-0000" />
+            </div>
+
+            <div class="field">
+              <label for="qnaMessage">문의 내용 <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="qnaMessage" name="message" required placeholder="문의하실 내용을 자세히 적어 주세요."></textarea>
+              <p class="field__help">개인정보는 문의 응대 목적으로만 사용되며 처리 후 파기됩니다. (예시 안내)</p>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block">문의 접수하기</button>
+          </form>
+
+          <aside style="display:grid;gap:16px">
+            <div class="card">
+              <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:12px">고객센터</h3>
+              <p style="font-size:1.75rem;font-weight:800;color:var(--color-primary);letter-spacing:-0.02em">1600-0000</p>
+              <p style="color:var(--color-text-soft);font-size:0.875rem;margin-top:8px">
+                평일 09:00 ~ 18:00<br />
+                점심 12:00 ~ 13:00<br />
+                토·일·공휴일 휴무<br />
+                <span style="font-size:0.8125rem">(전화번호는 예시입니다)</span>
+              </p>
+              <a href="#" data-demo class="btn btn--kakao btn--block" style="margin-top:16px">💬 카카오톡 상담</a>
+            </div>
+
+            <div class="card">
+              <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:12px">기업 사회공헌 문의</h3>
+              <p style="color:var(--color-text-soft);font-size:0.875rem">
+                교육 후원·협약 관련 문의는 사회공헌 전용 창구로 연락 주세요.
+              </p>
+              <p style="margin-top:12px;font-weight:700">📞 02-000-0001 (예시)</p>
+              <p style="font-weight:700">✉️ csr@miraeroom.example (예시)</p>
+              <a href="csr.html#contact" class="btn btn--ghost btn--block" style="margin-top:16px">제휴 문의 페이지로</a>
+            </div>
+
+            <div class="notice-box">
+              <ul>
+                <li>수강·결제 문의는 학습 중인 과정명을 함께 적어 주시면 빠르게 확인됩니다.</li>
+                <li>자격증 발급 관련 문의는 성명·생년월일을 함께 남겨 주세요.</li>
+                <li>본 사이트는 데모이며 실제 문의는 접수되지 않습니다.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

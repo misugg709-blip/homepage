@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강의 상세 | (사)미래교육이룸학술협회</title>
+  <meta name="description" content="교육과정의 커리큘럼, 자격증 정보, 교육비 지원 내용과 수강 안내를 확인하세요." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="lecture">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <div id="detailRoot">
+      <!-- 상단 히어로 -->
+      <section class="detail-hero" id="detailHero"></section>
+
+      <section class="section">
+        <div class="container">
+          <div class="detail-layout">
+            <!-- 본문 -->
+            <div>
+              <h2 class="section-title" style="font-size:1.35rem;margin-bottom:16px">강의 정보</h2>
+              <table class="info-table" id="infoTable"></table>
+
+              <!-- 탭 -->
+              <div data-tabs style="margin-top:48px">
+                <div class="tabs" role="tablist" aria-label="강의 상세 정보">
+                  <button type="button" class="tab" role="tab" id="tab-intro" aria-controls="panel-intro" aria-selected="true">강의 소개</button>
+                  <button type="button" class="tab" role="tab" id="tab-curriculum" aria-controls="panel-curriculum" aria-selected="false">커리큘럼</button>
+                  <button type="button" class="tab" role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false">자격증 정보</button>
+                  <button type="button" class="tab" role="tab" id="tab-refund" aria-controls="panel-refund" aria-selected="false">환불규정 · 수강안내</button>
+                </div>
+
+                <div style="padding-top:32px">
+                  <div class="tab-panel" id="panel-intro" role="tabpanel" aria-labelledby="tab-intro"></div>
+                  <div class="tab-panel" id="panel-curriculum" role="tabpanel" aria-labelledby="tab-curriculum" hidden></div>
+                  <div class="tab-panel" id="panel-cert" role="tabpanel" aria-labelledby="tab-cert" hidden></div>
+                  <div class="tab-panel" id="panel-refund" role="tabpanel" aria-labelledby="tab-refund" hidden></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 우측 신청 박스 -->
+            <aside class="apply-box" id="applyBox" aria-label="교육 신청"></aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- 연관 추천 -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">RELATED</span>
+            <h2 class="section-title">이 과정과 함께 많이 듣는 교육</h2>
+          </div>
+          <div class="grid grid--4" id="relatedCourses"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

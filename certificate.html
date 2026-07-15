@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>자격과정 안내 · 자격증 발급 | (사)미래교육이룸학술협회</title>
+  <meta name="description" content="협회가 발급하는 민간자격 종류, 발급 절차, 발급조회 안내입니다." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="certificate">
+  <a href="#main" class="skip-link">본문 바로가기</a>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">홈</a></li>
+          <li aria-current="page">자격과정 안내</li>
+        </ol>
+        <h1 class="page-hero__title">자격과정 안내 · 자격증 발급</h1>
+        <p class="page-hero__desc">
+          수료 후 발급되는 민간자격의 종류와 절차를 안내합니다. 후원 과정은 발급비까지 지원됩니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 발급 절차 -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">PROCESS</span>
+          <h2 class="section-title">자격증 발급 절차</h2>
+          <p class="section-desc">수료 후 신청하면 영업일 기준 5~7일 내 등기로 발송됩니다. (예시)</p>
+        </div>
+
+        <ol class="process-flow">
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">💻</span>
+            <span class="step__no">STEP 01</span>
+            <h3 class="step__title">과정 수료</h3>
+            <p class="step__desc">진도율 60% 이상 + 시험 60점 이상</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">📝</span>
+            <span class="step__no">STEP 02</span>
+            <h3 class="step__title">발급 신청</h3>
+            <p class="step__desc">마이페이지에서 정보 확인 후 신청</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">🔍</span>
+            <span class="step__no">STEP 03</span>
+            <h3 class="step__title">자격 검토</h3>
+            <p class="step__desc">협회에서 수료·검정 결과를 확인</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">🖨</span>
+            <span class="step__no">STEP 04</span>
+            <h3 class="step__title">자격증 제작</h3>
+            <p class="step__desc">발급번호 부여 및 자격증 인쇄</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">📮</span>
+            <span class="step__no">STEP 05</span>
+            <h3 class="step__title">등기 발송</h3>
+            <p class="step__desc">등록 주소로 등기 배송 (5~7일)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 발급조회 -->
+    <section class="section section--soft" id="issue">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">VERIFY</span>
+          <h2 class="section-title">자격증 발급조회</h2>
+          <p class="section-desc">발급받은 자격증의 진위 여부와 발급 상태를 확인할 수 있습니다.</p>
+        </div>
+
+        <div style="max-width:560px;margin:0 auto">
+          <form class="card" id="issueForm" novalidate>
+            <p class="form-note">데모 폼입니다. 입력값은 전송·저장되지 않으며 실제 조회는 되지 않습니다.</p>
+
+            <div class="field">
+              <label for="vName">성명 <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="vName" name="name" required autocomplete="name" placeholder="예) 홍길동" />
+            </div>
+
+            <div class="field">
+              <label for="vBirth">생년월일 <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="vBirth" name="birth" required inputmode="numeric" placeholder="예) 19900101 (8자리)" />
+              <p class="field__help">숫자 8자리로 입력해 주세요.</p>
+            </div>
+
+            <div class="field">
+              <label for="vCertNo">자격증 발급번호</label>
+              <input type="text" id="vCertNo" name="certNo" placeholder="예) MR-2026-000000 (선택 입력)" />
+              <p class="field__help">발급번호를 입력하면 더 정확하게 조회됩니다.</p>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block">발급 내역 조회하기</button>
+
+            <p class="notice-box" id="issueResult" tabindex="-1" role="status" hidden style="margin-top:16px"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자격증 샘플 -->
+    <section class="section">
+      <div class="container">
+        <div class="cert-sample">
+          <div class="map-placeholder">
+            <img src="https://placehold.co/600x420/f5f8fa/04668B?text=Certificate+Sample" alt="협회 발급 자격증 샘플 이미지 (예시)" width="600" height="420" loading="lazy" />
+          </div>
+          <div>
+            <span class="eyebrow">SAMPLE</span>
+            <h2 class="section-title" style="margin-bottom:16px">협회 발급 자격증</h2>
+            <ul class="check-list">
+              <li>자격증에는 성명, 생년월일, 자격종목, 등급, 발급번호, 발급일이 기재됩니다.</li>
+              <li>모든 자격증에는 고유 발급번호가 부여되어 발급조회로 진위 확인이 가능합니다.</li>
+              <li>기업 후원 과정 수료자는 <strong>발급비까지 지원</strong>되어 부담 없이 발급받을 수 있습니다. (예시)</li>
+              <li>분실 시 재발급 신청이 가능합니다. (재발급비 20,000원 · 예시)</li>
+            </ul>
+
+            <div class="notice-box" style="margin-top:24px">
+              <ul>
+                <li>본 협회가 발급하는 자격은 <strong>국가공인 자격이 아닌 민간자격</strong>입니다.</li>
+                <li>민간자격은 자격기본법에 따라 등록된 것으로, 국가로부터 인정받은 것이 아닙니다.</li>
+                <li>자격 취득이 취업을 보장하지 않으며, 취업 여부는 채용 기관의 기준에 따릅니다.</li>
+                <li>민간자격 등록번호 : 2026-000000 (예시 — 실제 등록번호로 교체 필요)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자격증 목록 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">CERTIFICATES</span>
+          <h2 class="section-title">발급 자격증 종류</h2>
+          <p class="section-desc">과정을 선택하면 상세 커리큘럼과 자격 정보를 확인할 수 있습니다.</p>
+        </div>
+
+        <ul class="grid grid--2" id="certList"></ul>
+      </div>
+    </section>
+
+    <!-- 초보자 가이드 -->
+    <section class="section" id="guide">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">GUIDE</span>
+          <h2 class="section-title">처음이신가요?</h2>
+        </div>
+
+        <div class="accordion" style="max-width:800px;margin:0 auto">
+          <div class="accordion__item">
+            <h3><button type="button" class="accordion__btn" aria-expanded="true" aria-controls="g1">교육비가 정말 무료인가요?</button></h3>
+            <div class="accordion__panel" id="g1">
+              기업 후원이 배정된 과정(💙 전액지원 표시)은 기업 사회공헌 기부금으로 교육비 전액이 지원되어 수강생 부담이 없습니다.
+              일부지원 과정은 표시된 자부담금만 부담하시면 되고, 후원이 배정되지 않은 자부담 과정은 교육비 전액을 부담하셔야 합니다.
+              지원 예산이 소진되면 지원 구분이 변경될 수 있습니다. (예시 안내)
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button type="button" class="accordion__btn" aria-expanded="false" aria-controls="g2">누구나 신청할 수 있나요?</button></h3>
+            <div class="accordion__panel" id="g2" hidden>
+              대부분의 과정은 학력·경력 제한 없이 신청할 수 있습니다.
+              다만 후원 기업이 대상을 특정한 사업(예: 경력단절여성, 중장년, 특정 지역 주민)은 해당 조건을 충족해야 지원 대상이 됩니다.
+              신청 후 협회에서 대상 여부를 확인해 안내드립니다. (예시 안내)
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button type="button" class="accordion__btn" aria-expanded="false" aria-controls="g3">수강 기간과 수료 기준이 어떻게 되나요?</button></h3>
+            <div class="accordion__panel" id="g3" hidden>
+              수강 기간은 승인일로부터 3개월이며 기간 내 무제한 반복 수강이 가능합니다.
+              진도율 60% 이상을 채우면 온라인 시험에 응시할 수 있고, 60점 이상 득점하면 수료 처리됩니다.
+              시험은 기간 내 최대 3회까지 재응시할 수 있습니다. (예시 안내)
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button type="button" class="accordion__btn" aria-expanded="false" aria-controls="g4">모바일로도 수강할 수 있나요?</button></h3>
+            <div class="accordion__panel" id="g4" hidden>
+              네. PC, 태블릿, 모바일에서 모두 수강할 수 있으며 진도는 자동 저장되어 기기를 바꿔도 이어서 학습할 수 있습니다.
+              강의 하나가 21~27분 내외로 구성되어 이동 중에도 부담 없이 학습할 수 있습니다. (예시 안내)
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button type="button" class="accordion__btn" aria-expanded="false" aria-controls="g5">자격증은 언제 받을 수 있나요?</button></h3>
+            <div class="accordion__panel" id="g5" hidden>
+              수료 후 마이페이지에서 발급을 신청하면 자격 검토를 거쳐 영업일 기준 5~7일 내 등기로 발송됩니다.
+              발급 진행 상태는 위 <a href="#issue">발급조회</a>에서 확인할 수 있습니다. (예시 안내)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

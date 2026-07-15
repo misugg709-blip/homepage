@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>천운 로또 · 로또당첨프로그램 추천</title>
+  <meta name="description" content="검증된 로또당첨프로그램을 비교·추천하고, 무료 로또 번호 생성기·당첨 모의추첨·번호별 출현 통계를 제공하는 천운 로또입니다." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo"><span class="dot">천</span> 천운 로또</a>
+      <nav class="nav">
+        <a href="#programs">프로그램 추천</a>
+        <a href="#generator">번호 생성기</a>
+        <a href="#stats">출현 통계</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="테마 전환">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <div>
+        <span class="badge">🎯 2026년 최신 업데이트</span>
+        <h1>믿을 수 있는<br /><span class="u">로또당첨프로그램</span>을<br />골라드립니다</h1>
+        <p class="hero-sub">전문가가 직접 검증한 프로그램 비교, 무료 번호 생성기, 당첨 모의추첨, 실시간 출현 통계까지 — 당첨을 준비하는 모든 도구를 한 곳에서.</p>
+        <div class="hero-actions">
+          <a href="#programs" class="btn btn-primary">프로그램 비교하기</a>
+          <a href="#generator" class="btn btn-ghost">무료 번호 뽑기 🍀</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="statPrograms">0</strong><span>추천 프로그램</span></div>
+          <div><strong id="statUsers">0</strong><span>누적 이용자</span></div>
+          <div><strong id="statRate">0%</strong><span>평균 만족도</span></div>
+        </div>
+      </div>
+      <div class="draw-machine">
+        <div class="drum"><div class="mini-balls" id="miniBalls"></div></div>
+        <h3>다음 추첨까지</h3>
+        <div class="countdown" id="countdown">계산 중…</div>
+        <p>매주 토요일 오후 8시 35분 추첨</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="section">
+    <div class="container">
+      <p class="eyebrow">Recommended</p>
+      <h2 class="section-title">🏆 로또당첨프로그램 추천 리스트</h2>
+      <p class="section-desc">별점, 가격, 주요 기능을 한눈에 비교하세요. 필터로 원하는 조건만 골라볼 수 있어요.</p>
+      <div class="filters">
+        <button class="chip active" data-filter="all">전체</button>
+        <button class="chip" data-filter="free">무료</button>
+        <button class="chip" data-filter="paid">유료</button>
+        <button class="chip" data-filter="ai">AI 분석</button>
+      </div>
+      <div id="programGrid" class="program-grid"></div>
+    </div>
+  </section>
+
+  <section id="generator" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow">Generator</p>
+      <h2 class="section-title">🔢 무료 로또 번호 생성기</h2>
+      <p class="section-desc">버튼 한 번으로 <strong>5세트를 동시에</strong> 추천해드립니다. 가중치 방식(균등 / 통계 기반)을 선택하고, 저장하거나 모의추첨으로 등수를 확인해보세요.</p>
+      <div class="generator-card">
+        <div class="gen-options">
+          <label><input type="radio" name="genMode" value="random" checked /> 완전 랜덤</label>
+          <label><input type="radio" name="genMode" value="stats" /> 통계 가중치</label>
+        </div>
+        <button id="genBtn" class="btn btn-primary">행운 번호 5세트 생성 🍀</button>
+        <div id="genResult" class="gen-result"></div>
+      </div>
+
+      <div class="saved-box" id="savedBox" hidden>
+        <div class="saved-head">
+          <h3>⭐ 내 번호 저장함 <span id="savedCount" class="pill">0</span></h3>
+          <button id="clearSaved" class="link-btn">전체 삭제</button>
+        </div>
+        <div id="savedList" class="saved-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats" class="section">
+    <div class="container">
+      <p class="eyebrow">Statistics</p>
+      <h2 class="section-title">📊 번호별 출현 통계</h2>
+      <p class="section-desc">역대 당첨 번호 기준(샘플 데이터) 각 번호의 출현 빈도입니다. 막대에 마우스를 올려보세요.</p>
+      <div class="chart-scroll"><div id="statChart" class="stat-chart"></div></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="section-title">❓ 자주 묻는 질문</h2>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <section class="notice">
+    <div class="container">
+      <p>⚠️ 로또는 확률 게임이며, 어떤 프로그램도 당첨을 보장하지 않습니다. 본 사이트는 정보 제공 목적의 데모이며, 과도한 구매는 삼가세요. 만 19세 이상만 구매 가능합니다.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2026 천운 로또. 정보 제공용 데모 사이트입니다.</p></div>
+  </footer>
+
+  <!-- 모의추첨 모달 -->
+  <div class="modal" id="simModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="simTitle">
+      <button class="modal-close" data-close aria-label="닫기">✕</button>
+      <h3 id="simTitle">🎰 당첨 모의추첨</h3>
+      <p class="modal-sub">내 번호와 이번 가상 추첨 결과를 비교합니다.</p>
+      <div class="sim-row"><span class="sim-label">내 번호</span><div class="ball-set" id="simMine"></div></div>
+      <div class="sim-row"><span class="sim-label">당첨 번호</span><div class="ball-set" id="simWin"></div></div>
+      <div class="sim-result" id="simResult"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

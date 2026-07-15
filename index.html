@@ -3,128 +3,314 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>천운 로또 · 로또당첨프로그램 추천</title>
-  <meta name="description" content="검증된 로또당첨프로그램을 비교·추천하고, 무료 로또 번호 생성기·당첨 모의추첨·번호별 출현 통계를 제공하는 천운 로또입니다." />
-  <link rel="stylesheet" href="style.css" />
+  <title>(사)미래교육이룸학술협회 · 기업 사회공헌으로 잇는 평생교육</title>
+  <meta name="description" content="미래교육이룸학술협회는 기업 사회공헌 기부금으로 교육비를 지원하여, 배움이 필요한 분들께 무상 평생교육과 민간자격 과정을 제공하는 비영리 학술협회입니다." />
+  <meta property="og:title" content="(사)미래교육이룸학술협회" />
+  <meta property="og:description" content="기업의 나눔이 배움의 기회가 됩니다. 기업 사회공헌 기부금으로 운영되는 평생교육·민간자격 협회." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="logo"><span class="dot">천</span> 천운 로또</a>
-      <nav class="nav">
-        <a href="#programs">프로그램 추천</a>
-        <a href="#generator">번호 생성기</a>
-        <a href="#stats">출현 통계</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="테마 전환">🌙</button>
-    </div>
-  </header>
+<body data-page="home">
+  <a href="#main" class="skip-link">본문 바로가기</a>
 
-  <section class="hero" id="top">
-    <div class="container">
-      <div>
-        <span class="badge">🎯 2026년 최신 업데이트</span>
-        <h1>믿을 수 있는<br /><span class="u">로또당첨프로그램</span>을<br />골라드립니다</h1>
-        <p class="hero-sub">전문가가 직접 검증한 프로그램 비교, 무료 번호 생성기, 당첨 모의추첨, 실시간 출현 통계까지 — 당첨을 준비하는 모든 도구를 한 곳에서.</p>
-        <div class="hero-actions">
-          <a href="#programs" class="btn btn-primary">프로그램 비교하기</a>
-          <a href="#generator" class="btn btn-ghost">무료 번호 뽑기 🍀</a>
+  <header class="site-header" id="site-header"><!-- main.js에서 렌더링 --></header>
+
+  <main id="main">
+    <!-- (1) 히어로 배너 슬라이더 -->
+    <section class="hero" id="hero" tabindex="-1" aria-roledescription="캐러셀" aria-label="주요 안내 배너">
+      <!-- main.js에서 렌더링 -->
+    </section>
+
+    <!-- (2) 핵심 안내 프로세스 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2 class="section-title">신청부터 자격증까지, 5단계면 끝납니다</h2>
+          <p class="section-desc">기업 후원이 배정된 과정은 <strong>교육비 부담 없이</strong> 모든 단계를 진행할 수 있습니다.</p>
         </div>
-        <div class="hero-stats">
-          <div><strong id="statPrograms">0</strong><span>추천 프로그램</span></div>
-          <div><strong id="statUsers">0</strong><span>누적 이용자</span></div>
-          <div><strong id="statRate">0%</strong><span>평균 만족도</span></div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">📝</span>
+            <span class="step__no">STEP 01</span>
+            <h3 class="step__title">회원가입</h3>
+            <p class="step__desc">이메일 인증 후 1분이면 가입이 완료됩니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">🎯</span>
+            <span class="step__no">STEP 02</span>
+            <h3 class="step__title">교육신청</h3>
+            <p class="step__desc">후원 배정 과정을 신청하면 지원 대상 여부를 확인해 드립니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">💻</span>
+            <span class="step__no">STEP 03</span>
+            <h3 class="step__title">온라인 학습</h3>
+            <p class="step__desc">PC·모바일 어디서나 학습하고 진도는 자동 저장됩니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">✍️</span>
+            <span class="step__no">STEP 04</span>
+            <h3 class="step__title">시험 · 수료</h3>
+            <p class="step__desc">진도율 60% 이상이면 응시할 수 있고, 60점 이상이면 수료입니다.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon" aria-hidden="true">🏅</span>
+            <span class="step__no">STEP 05</span>
+            <h3 class="step__title">자격증 발급</h3>
+            <p class="step__desc">수료 후 신청하면 영업일 기준 5~7일 내 등기로 받아보실 수 있습니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- (3) 협회 사회공헌 모델 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">OUR MODEL</span>
+          <h2 class="section-title">기업의 나눔이 배움의 기회가 되는 구조</h2>
+          <p class="section-desc">
+            미래교육이룸학술협회는 수강료로 운영되는 사설 교육기관이 아니라,
+            기업 사회공헌 기부금을 교육으로 전환하는 <strong>비영리 학술협회</strong>입니다.
+          </p>
+        </div>
+
+        <ol class="csr-model">
+          <li class="csr-node">
+            <span class="csr-node__icon" aria-hidden="true">🏢</span>
+            <span class="csr-node__role">SPONSOR</span>
+            <h3 class="csr-node__title">기업 사회공헌부</h3>
+            <p class="csr-node__desc">사회공헌 예산으로 교육 사업을 후원하고, 대상과 목표를 협회와 함께 설계합니다.</p>
+          </li>
+          <li class="csr-node">
+            <span class="csr-node__icon" aria-hidden="true">🤝</span>
+            <span class="csr-node__role">ASSOCIATION</span>
+            <h3 class="csr-node__title">미래교육이룸학술협회</h3>
+            <p class="csr-node__desc">기부금으로 교육과정을 개발·운영하고 대상자를 모집하며, 자격 검정을 시행합니다.</p>
+          </li>
+          <li class="csr-node">
+            <span class="csr-node__icon" aria-hidden="true">🎓</span>
+            <span class="csr-node__role">LEARNER</span>
+            <h3 class="csr-node__title">교육 수혜자</h3>
+            <p class="csr-node__desc">교육비 부담 없이 학습하고 자격을 취득해 재취업·창업·사회활동으로 나아갑니다.</p>
+          </li>
+          <li class="csr-node">
+            <span class="csr-node__icon" aria-hidden="true">🌍</span>
+            <span class="csr-node__role">IMPACT</span>
+            <h3 class="csr-node__title">지역사회 환원</h3>
+            <p class="csr-node__desc">양성된 인력이 돌봄·교육 공백을 메우고, 성과는 리포트로 후원 기업에 보고됩니다.</p>
+          </li>
+        </ol>
+
+        <p style="text-align:center;margin-top:36px">
+          <a href="csr.html" class="btn btn--primary btn--lg">사회공헌 모델 자세히 보기 →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- (4) 인기 교육과정 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">POPULAR COURSES</span>
+            <h2 class="section-title">가장 많이 수강한 교육과정</h2>
+            <p class="section-desc">💙 표시가 있는 과정은 기업 후원으로 교육비가 지원됩니다.</p>
+          </div>
+          <a href="lecture.html" class="btn btn--ghost">전체 과정 보기 →</a>
+        </div>
+
+        <div class="grid grid--4" id="popularCourses"><!-- main.js에서 렌더링 --></div>
+      </div>
+    </section>
+
+    <!-- (5) 카테고리별 과정안내 탭 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">COURSE GUIDE</span>
+          <h2 class="section-title">분야별 교육과정 안내</h2>
+        </div>
+
+        <div id="courseTabs" data-tabs>
+          <div class="tabs" role="tablist" aria-label="교육과정 분야 선택"><!-- main.js --></div>
+          <div id="courseTabPanels" style="padding-top:32px"><!-- main.js --></div>
         </div>
       </div>
-      <div class="draw-machine">
-        <div class="drum"><div class="mini-balls" id="miniBalls"></div></div>
-        <h3>다음 추첨까지</h3>
-        <div class="countdown" id="countdown">계산 중…</div>
-        <p>매주 토요일 오후 8시 35분 추첨</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="programs" class="section">
-    <div class="container">
-      <p class="eyebrow">Recommended</p>
-      <h2 class="section-title">🏆 로또당첨프로그램 추천 리스트</h2>
-      <p class="section-desc">별점, 가격, 주요 기능을 한눈에 비교하세요. 필터로 원하는 조건만 골라볼 수 있어요.</p>
-      <div class="filters">
-        <button class="chip active" data-filter="all">전체</button>
-        <button class="chip" data-filter="free">무료</button>
-        <button class="chip" data-filter="paid">유료</button>
-        <button class="chip" data-filter="ai">AI 분석</button>
-      </div>
-      <div id="programGrid" class="program-grid"></div>
-    </div>
-  </section>
-
-  <section id="generator" class="section section-alt">
-    <div class="container">
-      <p class="eyebrow">Generator</p>
-      <h2 class="section-title">🔢 무료 로또 번호 생성기</h2>
-      <p class="section-desc">버튼 한 번으로 <strong>5세트를 동시에</strong> 추천해드립니다. 가중치 방식(균등 / 통계 기반)을 선택하고, 저장하거나 모의추첨으로 등수를 확인해보세요.</p>
-      <div class="generator-card">
-        <div class="gen-options">
-          <label><input type="radio" name="genMode" value="random" checked /> 완전 랜덤</label>
-          <label><input type="radio" name="genMode" value="stats" /> 통계 가중치</label>
+    <!-- (6) 자격증 카테고리 그리드 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">CATEGORY</span>
+          <h2 class="section-title">관심 분야를 선택해 보세요</h2>
+          <p class="section-desc">12개 분야 · 24개 자격과정을 운영하고 있습니다. (예시)</p>
         </div>
-        <button id="genBtn" class="btn btn-primary">행운 번호 5세트 생성 🍀</button>
-        <div id="genResult" class="gen-result"></div>
-      </div>
 
-      <div class="saved-box" id="savedBox" hidden>
-        <div class="saved-head">
-          <h3>⭐ 내 번호 저장함 <span id="savedCount" class="pill">0</span></h3>
-          <button id="clearSaved" class="link-btn">전체 삭제</button>
+        <nav class="cat-grid" id="catGrid" aria-label="자격증 카테고리"><!-- main.js --></nav>
+      </div>
+    </section>
+
+    <!-- (7) 후원 기업 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">PARTNERS</span>
+          <h2 class="section-title">함께해 주시는 후원 기업</h2>
+          <p class="section-desc">
+            아래 기업명·로고는 모두 <strong>가상의 예시</strong>입니다. 실제 기업명과 로고를 게시하려면 해당 기업의 사전 동의가 필요합니다.
+          </p>
         </div>
-        <div id="savedList" class="saved-list"></div>
+
+        <ul class="partner-strip" id="partnerStrip"><!-- main.js --></ul>
+
+        <p style="text-align:center;margin-top:36px">
+          <a href="csr.html#partners" class="btn btn--ghost">파트너십 안내 보기 →</a>
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="stats" class="section">
+    <!-- (8) 사업 사례 · 임팩트 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">IMPACT</span>
+            <h2 class="section-title">후원이 만든 변화</h2>
+            <p class="section-desc">후원 기업별 사업 성과는 리포트로 정리해 보고드립니다.</p>
+          </div>
+          <a href="csr.html#impact" class="btn btn--ghost">사업 사례 더 보기 →</a>
+        </div>
+
+        <div class="grid grid--3" id="impactCards"><!-- main.js --></div>
+      </div>
+    </section>
+
+    <!-- (9) 협회 소개 배너 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="about-banner">
+          <div>
+            <span class="eyebrow">ABOUT US</span>
+            <p class="about-banner__quote">
+              미래교육이룸학술협회는 체계적인 평생교육 커리큘럼으로<br />여러분의 성장을 지원합니다.
+            </p>
+            <p style="color:var(--color-text-soft)">
+              2014년 설립 이후 기업 사회공헌과 평생교육을 잇는 가교 역할을 해왔습니다.
+              계열 교육기관인 <strong>미래인재교육원</strong>과 함께 과정 개발부터 운영, 자격 검정까지 직접 수행합니다. (예시)
+            </p>
+            <ul class="about-banner__list">
+              <li>기부금 전액을 교육과정 운영과 수혜자 지원에 사용합니다</li>
+              <li>모든 후원 사업의 집행 내역과 성과를 투명하게 공시합니다</li>
+              <li>현장 전문가가 참여한 실무 중심 커리큘럼을 직접 개발합니다</li>
+              <li>수료 후 진로·활동 연계까지 지원합니다</li>
+            </ul>
+            <a href="about.html" class="btn btn--primary btn--lg">협회 더 알아보기</a>
+          </div>
+          <div class="about-banner__img">
+            <img src="https://placehold.co/640x480/04668B/ffffff?text=About+Us" alt="미래교육이룸학술협회 교육 현장 사진 (예시 이미지)" width="640" height="480" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (10) 공지사항 / 협회소식 / 일정 -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <div>
+            <div class="section-head section-head--row" style="margin-bottom:8px">
+              <h2 class="section-title" style="font-size:1.25rem">공지사항</h2>
+              <a href="community.html#notice" aria-label="공지사항 더보기" style="color:var(--color-text-soft)">＋</a>
+            </div>
+            <ul class="notice-list" id="homeNotices"><!-- main.js --></ul>
+          </div>
+
+          <div>
+            <div class="section-head section-head--row" style="margin-bottom:8px">
+              <h2 class="section-title" style="font-size:1.25rem">협회소식</h2>
+              <a href="community.html#notice" aria-label="협회소식 더보기" style="color:var(--color-text-soft)">＋</a>
+            </div>
+            <ul class="notice-list" id="homeNews"><!-- main.js --></ul>
+          </div>
+
+          <div>
+            <div class="section-head section-head--row" style="margin-bottom:8px">
+              <h2 class="section-title" style="font-size:1.25rem">일정 안내</h2>
+              <a href="community.html#notice" aria-label="일정 더보기" style="color:var(--color-text-soft)">＋</a>
+            </div>
+            <ul class="notice-list" id="homeSchedules"><!-- main.js --></ul>
+          </div>
+        </div>
+
+        <div class="event-banner grid grid--2" id="homeEvents" style="margin-top:40px"><!-- main.js --></div>
+      </div>
+    </section>
+
+    <!-- (11) 수강 후기 슬라이더 -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">REVIEWS</span>
+            <h2 class="section-title">수료생이 남긴 후기</h2>
+          </div>
+          <div class="slider-nav">
+            <button type="button" data-review-prev aria-label="이전 후기">‹</button>
+            <button type="button" data-review-next aria-label="다음 후기">›</button>
+          </div>
+        </div>
+
+        <div id="reviewSlider">
+          <div class="review-viewport">
+            <div class="review-track"><!-- main.js --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (12) 기업 사회공헌 CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="csr-cta">
+          <div>
+            <span class="hero__eyebrow">🏢 기업 사회공헌 담당자님께</span>
+            <h2 class="csr-cta__title">사회공헌 예산이<br />교육 성과로 이어지도록</h2>
+            <p class="csr-cta__desc">
+              대상자 모집부터 교육 운영, 자격 검정, 성과 측정과 리포트까지 협회가 원스톱으로 수행합니다.
+              기업 상황에 맞는 사업 설계를 무료로 제안해 드립니다.
+            </p>
+            <div class="csr-cta__contact">
+              <p>📞 사회공헌 전용 : <strong>02-000-0001</strong> (예시)</p>
+              <p>✉️ <strong>csr@miraeroom.example</strong> (예시)</p>
+            </div>
+          </div>
+          <div style="display:grid;gap:12px">
+            <a href="csr.html#contact" class="btn btn--accent btn--lg">사회공헌 제휴 문의하기</a>
+            <a href="csr.html#impact" class="btn btn--outline-light btn--lg">사업 사례 · 임팩트 보기</a>
+            <a href="csr.html#process" class="btn btn--outline-light btn--lg">기부 · 협약 절차 안내</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- (13) 신뢰 배지 통계 스트립 -->
+  <section class="stat-strip" aria-label="협회 주요 지표">
     <div class="container">
-      <p class="eyebrow">Statistics</p>
-      <h2 class="section-title">📊 번호별 출현 통계</h2>
-      <p class="section-desc">역대 당첨 번호 기준(샘플 데이터) 각 번호의 출현 빈도입니다. 막대에 마우스를 올려보세요.</p>
-      <div class="chart-scroll"><div id="statChart" class="stat-chart"></div></div>
+      <div class="stat-strip__grid" id="statGrid"><!-- main.js --></div>
+      <p style="text-align:center;margin-top:28px;font-size:0.8125rem;color:rgba(255,255,255,0.7)">
+        민간자격 등록번호 : 2026-000000 (예시) · 위 수치는 모두 예시 데이터입니다.
+      </p>
     </div>
   </section>
 
-  <section id="faq" class="section section-alt">
-    <div class="container">
-      <p class="eyebrow">FAQ</p>
-      <h2 class="section-title">❓ 자주 묻는 질문</h2>
-      <div class="faq-list" id="faqList"></div>
-    </div>
-  </section>
+  <footer class="site-footer" id="site-footer"><!-- main.js에서 렌더링 --></footer>
 
-  <section class="notice">
-    <div class="container">
-      <p>⚠️ 로또는 확률 게임이며, 어떤 프로그램도 당첨을 보장하지 않습니다. 본 사이트는 정보 제공 목적의 데모이며, 과도한 구매는 삼가세요. 만 19세 이상만 구매 가능합니다.</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container"><p>© 2026 천운 로또. 정보 제공용 데모 사이트입니다.</p></div>
-  </footer>
-
-  <!-- 모의추첨 모달 -->
-  <div class="modal" id="simModal" hidden>
-    <div class="modal-backdrop" data-close></div>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="simTitle">
-      <button class="modal-close" data-close aria-label="닫기">✕</button>
-      <h3 id="simTitle">🎰 당첨 모의추첨</h3>
-      <p class="modal-sub">내 번호와 이번 가상 추첨 결과를 비교합니다.</p>
-      <div class="sim-row"><span class="sim-label">내 번호</span><div class="ball-set" id="simMine"></div></div>
-      <div class="sim-row"><span class="sim-label">당첨 번호</span><div class="ball-set" id="simWin"></div></div>
-      <div class="sim-result" id="simResult"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
